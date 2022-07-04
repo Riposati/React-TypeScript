@@ -1,6 +1,6 @@
 import React from 'react';
 
-class MyButton extends React.Component{
+class ButtonComponent extends React.Component{
     render(){
         return (
             <button>My button</button>
@@ -8,4 +8,4 @@ class MyButton extends React.Component{
     }
 }
 
-export default MyButton;
+export default ButtonComponent;

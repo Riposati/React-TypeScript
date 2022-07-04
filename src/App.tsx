@@ -1,10 +1,11 @@
-import React from 'react';
-import MyButton from './components/MyButton';
+import FormComponent from './components/FormComponent';
+import List from './components/ListComponent';
 
 function App() {
   return (
     <div className="App">
-      <MyButton />
+      <FormComponent />
+      <List />
     </div>
   );
 }
