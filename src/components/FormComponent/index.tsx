@@ -26,7 +26,9 @@ function FormComponent(){
                 required/>
             </div>
 
-            <ButtonComponent/>
+            <ButtonComponent>
+                Adicionar
+            </ButtonComponent>
 
         </form>
     )
