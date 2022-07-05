@@ -1,5 +1,3 @@
-import React from 'react';
-
 function List(){
 
     const tarefas: Array<{tarefa: string, tempo: string}> = [
