@@ -1,9 +1,10 @@
 import ButtonComponent from '../ButtonComponent';
+import './style.scss';
 
 function FormComponent(){
     return (
-        <form>
-            <div>
+        <form className='novaTarefa'>
+            <div className='inputContainer'>
                 <label htmlFor='task'>Adicione um novo estudo </label>
                 <input 
                 type='text' 
@@ -13,7 +14,7 @@ function FormComponent(){
                 required/>
             </div>
 
-            <div>
+            <div className='inputContainer'>
                 <label htmlFor='time'>Tempo </label>
                 <input 
                 type='time' 
