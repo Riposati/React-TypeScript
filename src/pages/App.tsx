@@ -1,10 +1,10 @@
 import FormComponent from '../components/FormComponent';
 import List from '../components/ListComponent';
-import './style.scss';
+import style from './App.module.scss';
 
 function App() {
   return (
-    <div className="AppStyle">
+    <div className={style.AppStyle}>
       <FormComponent />
       <List />
     </div>
