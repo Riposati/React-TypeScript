@@ -1,24 +1,8 @@
+import { ITarefa } from '../../types/tarefas';
 import ItemComponent from './ItemComponent';
 import style from './List.module.scss';
 
-function List(){
-
-    const tarefas: Array<{tarefa: string, tempo: string}> = [
-        {
-            tarefa: "React",
-            tempo: "02:00:00"
-        },
-
-        {
-            tarefa: "JavaScript",
-            tempo: "01:00:00"
-        },
-
-        {
-            tarefa: "Typescript",
-            tempo: "03:00:00"
-        }
-    ];
+function List({tarefas}: {tarefas: ITarefa[]}){
 
     return (
 
