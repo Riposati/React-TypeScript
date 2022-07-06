@@ -1,3 +1,4 @@
+import ItemComponent from './ItemComponent';
 import style from './List.module.scss';
 
 function List(){
@@ -27,11 +28,10 @@ function List(){
                 
                 {
                     tarefas.map((item, index) => (
-
-                        <li key={index} className={style.item}>
-                            <h3>{item.tarefa}</h3>
-                            <p>{item.tempo}</p>
-                        </li> 
+                       <ItemComponent 
+                            key = {index}
+                            {...item}
+                       />
                     ))
                 }
 
