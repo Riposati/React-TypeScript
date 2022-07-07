@@ -2,7 +2,7 @@ import React from 'react';
 import ButtonComponent from '../ButtonComponent';
 import style from './Form.module.scss';
 import { v4 as uuidv4 } from 'uuid'; 
-import { ITask } from '../../types/tarefas';
+import { ITask } from '../../types/tasks';
 
 class FormComponent extends React.Component<{setTasks: React.Dispatch<React.SetStateAction<ITask[]>>}>{
 

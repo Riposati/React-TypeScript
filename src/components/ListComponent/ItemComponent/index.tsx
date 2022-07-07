@@ -1,4 +1,4 @@
-import { ITask } from '../../../types/tarefas';
+import { ITask } from '../../../types/tasks';
 import style from '../List.module.scss';
 
 export default function ItemComponent({task, time, selected, completed, id} : ITask){

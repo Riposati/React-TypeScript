@@ -1,4 +1,4 @@
-import { ITask } from '../../types/tarefas';
+import { ITask } from '../../types/tasks';
 import ItemComponent from './ItemComponent';
 import style from './List.module.scss';
 

@@ -3,7 +3,7 @@ import FormComponent from '../components/FormComponent';
 import List from '../components/ListComponent';
 import style from './App.module.scss';
 import { useState } from 'react';
-import { ITask } from '../types/tarefas';
+import { ITask } from '../types/tasks';
 
 function App() {
 
