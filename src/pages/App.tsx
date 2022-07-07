@@ -3,16 +3,16 @@ import FormComponent from '../components/FormComponent';
 import List from '../components/ListComponent';
 import style from './App.module.scss';
 import { useState } from 'react';
-import { ITarefa } from '../types/tarefas';
+import { ITask } from '../types/tarefas';
 
 function App() {
 
-  const [tarefas, setTarefas] = useState<ITarefa[]>([]);
+  const [tasks, setTasks] = useState<ITask[]>([]);
 
   return (
     <div className={style.AppStyle}>
-      <FormComponent setTarefas={setTarefas} />
-      <List tarefas={tarefas}/>
+      <FormComponent setTasks={setTasks} />
+      <List tarefas={tasks}/>
       <Stopwatch/>
     </div>
   );

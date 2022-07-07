@@ -1,10 +1,14 @@
+import { ITask } from '../../../types/tarefas';
 import style from '../List.module.scss';
 
-export default function ItemComponent({tarefa, tempo} : {tarefa: string, tempo: string}){
+export default function ItemComponent({task, time, selected, completed, id} : ITask){
+    
+    console.log('item atual: ', {task, time, selected, completed, id});
+
     return (
         <li className={style.item}>
-            <h3>{tarefa}</h3>
-            <p>{tempo}</p>
+            <h3>{task}</h3>
+            <p>{time}</p>
         </li>
     )
 }

@@ -1,8 +1,8 @@
-import { ITarefa } from '../../types/tarefas';
+import { ITask } from '../../types/tarefas';
 import ItemComponent from './ItemComponent';
 import style from './List.module.scss';
 
-function List({tarefas}: {tarefas: ITarefa[]}){
+function List({tarefas}: {tarefas: ITask[]}){
 
     return (
 
