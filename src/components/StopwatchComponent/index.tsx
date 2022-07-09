@@ -7,9 +7,10 @@ import WatchComponent from "./WatchComponent";
 
 interface Props{
     selected: ITask | undefined;
+    endTask: () => void
 }
 
-export default function Stopwatch({selected}: Props){
+export default function Stopwatch({selected, endTask}: Props){
 
     const [time, setTime] = useState<number>();
 
@@ -17,6 +18,16 @@ export default function Stopwatch({selected}: Props){
         if(selected?.time)
             setTime(convertToSeconds(selected.time))
     },[selected])
+
+    function regressive(counter: number = 0){
+        setTimeout(() => {
+            if(counter > 0){
+                setTime(counter - 1);
+                return regressive(counter - 1);
+            }
+            endTask();
+        }, 1000);
+    }
 
     return (
         <div className={style.cronometro}>
@@ -27,8 +38,10 @@ export default function Stopwatch({selected}: Props){
                 <WatchComponent time={time}/>
             </div>
             
-            <ButtonComponent>
-                Começar!
+            <ButtonComponent onClick = {() => {
+                regressive(time);
+            }}>
+            Começar!
             </ButtonComponent>
         </div>
     )
